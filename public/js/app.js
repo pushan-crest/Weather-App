@@ -6,7 +6,7 @@ const searchbtn = document.querySelector(".btnsearch");
 const t1 = document.querySelector("#message-1");
 
 const fetchdata = function (address) {
-  fetch(`http://localhost:3000/weather?address=${address}`)
+  fetch(`https://weather-app-s2b4.onrender.com/weather?address=${address}`)
     .then((res) => {
       return res.json();
     })
